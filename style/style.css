@@ -1,0 +1,134 @@
+:root{
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main: hsl(217, 54%, 11%); /*main BG*/
+    --Very-dark-blue-card: hsl(216, 50%, 16%); /*card BG*/
+    --Very-dark-blue-line: hsl(215, 32%, 27%); /*line*/
+    --White: hsl(0, 0%, 100%);
+
+    --Name-stats-Font-size: 18px; /*paragraph*/
+}
+
+html, 
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    width: 370px;
+    height: 100vh;
+}
+
+body{
+    background: var(--Very-dark-blue-main);
+}
+
+.nft-card{
+    border-radius: 8px;
+    width: 85%;
+    margin: 0 auto;
+    background: var(--Very-dark-blue-card);
+    margin-top: 46px;
+}
+
+.nft-card-top{
+    size: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 20px;
+}
+
+.nft-card-top img{
+    height: 280px;
+    border-radius: 4%;
+    margin-top: 20px;
+}
+
+.nft-card-bottom_datos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.nft-card-bottom_datos p:nth-child(1){
+    font-weight: 600;
+    color: var(--White);
+    margin: 0;
+    font-size: 22px;
+}
+
+.nft-card-bottom_datos p:nth-child(2), p:nth-child(3) {
+    font-weight: 300;
+    color: var(--Soft-blue);
+    font-size: 16px;
+}
+
+.nft-card-bottom_datos p:nth-child(2){
+    margin-bottom: 0;
+}
+
+.nft-card-bottom_datos p:nth-child(3){
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.nft-card-bottom_descripcion{
+    display: flex;
+    height: 60px;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -2px;
+}
+
+.nft-card-bottom_descripcion div:nth-child(1){
+    font-size: var(--Name-stats-Font-size);
+    font-weight: 400;
+    color: var(--Cyan);
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nft-card-bottom_descripcion div:nth-child(1) > img{
+    margin-right: 6px;
+}
+
+.nft-card-bottom_descripcion div:nth-child(2) > img{
+    margin-right: 6px;
+}
+
+.nft-card-bottom_descripcion div:nth-child(2){
+    font-weight: 400;
+    color: var(--Soft-blue);
+    display: flex;
+    align-items: center;
+}
+
+.nft-card-bottom__creacion{
+    border-top: 1px solid var(--Very-dark-blue-line);
+    display: flex;
+    height: 70px;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.nft-card-bottom__creacion img{
+    border-radius: 50%;
+    border: 1px solid white;
+    height: 28px;
+    margin-right: 14px;
+}
+
+.nft-card-bottom__creacion div span:nth-child(1){
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.nft-card-bottom__creacion div span:nth-child(2){
+    font-weight: 300;
+    color: var(--White);
+}
