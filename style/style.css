@@ -22,12 +22,44 @@ body{
     background: var(--Very-dark-blue-main);
 }
 
+
+
+.button-container{
+    margin-top: 20px;
+    height: 36px;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+.button{
+    width: 100px;
+    border-radius: 5px;
+    border:1px solid black;
+    color: var(--White);
+    background-color:var(--Very-dark-blackish-blue);
+    cursor: pointer;
+}
+.button:hover{
+    color:var(--Very-dark-blackish-blue);
+    background-color: var(--White);
+}
+.button:disabled{
+    opacity: 0.5;
+}
+.container-cards{
+    padding: 25px 25px 25px;
+    
+}
+
+
+
 .nft-card{
     border-radius: 8px;
     width: 85%;
     margin: 0 auto;
     background: var(--Very-dark-blue-card);
     margin-top: 46px;
+    width: 320px;
 }
 
 .nft-card-top{
@@ -132,3 +164,14 @@ body{
     font-weight: 300;
     color: var(--White);
 }
+
+.creacion{
+    font-weight: 300;
+    color: var(--Soft-blue);
+}
+
+.name{
+    font-weight: 300;
+    color: var(--White);
+}
+
